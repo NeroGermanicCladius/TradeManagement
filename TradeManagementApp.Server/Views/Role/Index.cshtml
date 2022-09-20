@@ -1,0 +1,139 @@
+﻿@model TradeManagementApp.Server.ViewModels.AccountViewModels.RoleViewModel
+
+@* <div class="container"> *@
+@*     <div class="row"> *@
+@*         <div class="col-md-12 min-vh-100 d-flex flex-column justify-content-center"> *@
+@*             <div class="row"> *@
+@*                 <div class="col-lg-6 col-md-8 mx-auto"> *@
+@*                     <div class="card rounded shadow shadow-sm"> *@
+@*                         <form asp-action="Index" asp-controller="Role" method="post"> *@
+@*                             <img class="card-img-top" src="/Images/tracker.png"/> *@
+@*                             <div class="card-body"> *@
+@*                                 <h5 class="card-title">Tracker</h5> *@
+@*                             </div> *@
+@* *@
+@*                             <div asp-validation-summary="All"></div> *@
+@*                             @Html.HiddenFor(m => m.LoginModel.UserName) *@
+@*                             @Html.HiddenFor(m => m.LoginModel.Password) *@
+@*                             @Html.HiddenFor(m => m.LoginModel.ReturnUrl) *@
+@*                             <input hidden class="form-control" asp-for="RoleValue" value="Tracker"/> *@
+@* *@
+@* *@
+@*                             <div class="card-block text-center"> *@
+@*                                 <button type="submit" class="btn btn-success btn-lg float-right" id="btnRole">Choose</button> *@
+@*                             </div> *@
+@*                         </form> *@
+@*                     </div> *@
+@* *@
+@*                     <div class="card rounded shadow-sm border-dark mb-3"> *@
+@*                         <form asp-action="Index" asp-controller="Role" method="post"> *@
+@*                             <img class="card-img-top" src="/Images/trader.png"/> *@
+@* *@
+@*                             <div class="card-body"> *@
+@*                                 <h5 class="card-title">Trader</h5> *@
+@*                             </div> *@
+@* *@
+@*                             <div asp-validation-summary="All"></div> *@
+@*                             @Html.HiddenFor(m => m.LoginModel.UserName) *@
+@*                             @Html.HiddenFor(m => m.LoginModel.Password) *@
+@*                             @Html.HiddenFor(m => m.LoginModel.ReturnUrl) *@
+@*                             <input hidden class="form-control" type="text" value="Trader" asp-for="RoleValue"/> *@
+@* *@
+@*                             <div class="card-block text-center"> *@
+@*                                 <button type="submit" class="btn btn-success btn-lg float-right" id="btnRole">Choose</button> *@
+@*                             </div> *@
+@*                         </form> *@
+@*                     </div> *@
+@* *@
+@*                     <div class="card rounded shadow-sm border-dark mb-3"> *@
+@*                         <form asp-action="Index" asp-controller="Role" method="post"> *@
+@*                             <img class="card-img-top" src="/Images/finder.png"/> *@
+@* *@
+@*                             <div class="card-body"> *@
+@*                                 <h5 class="card-title">Finder</h5> *@
+@*                             </div> *@
+@*                             <div asp-validation-summary="All"></div> *@
+@*                             @Html.HiddenFor(m => m.LoginModel.UserName) *@
+@*                             @Html.HiddenFor(m => m.LoginModel.Password) *@
+@*                             @Html.HiddenFor(m => m.LoginModel.ReturnUrl) *@
+@*                             <input hidden class="form-control" type="text" value="Finder" asp-for="RoleValue"/> *@
+@* *@
+@*                             <div class="card-block text-center"> *@
+@*                                 <button type="submit" class="btn btn-success btn-lg float-right" id="btnRole">Choose</button> *@
+@*                             </div> *@
+@*                         </form> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             </div> *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@
+
+
+
+<div class="container mt-5 mb-3">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card rounded shadow shadow-sm">
+                <form asp-action="Index" asp-controller="Role" method="post">
+                    <img class="card-img-top" src="/Content/Images/tracker.png" />
+                    <div class="card-body">
+                        <h5 class="card-title">Tracker</h5>
+                    </div>
+
+                    <div asp-validation-summary="All"></div>
+                    @Html.HiddenFor(m => m.LoginModel.UserName)
+                    @Html.HiddenFor(m => m.LoginModel.Password)
+                    @Html.HiddenFor(m => m.LoginModel.ReturnUrl)
+                    <input hidden class="form-control" asp-for="RoleValue" value="Tracker"/>
+
+
+                    <div class="card-block text-center">
+                        <button type="submit" class="btn btn-success btn-lg float-md-none" badge"" id="btnRole">Choose</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card rounded shadow shadow-sm">
+                <form asp-action="Index" asp-controller="Role" method="post">
+                    <img class="card-img-top" src="/Content/Images/trader.png" />
+
+                    <div class="card-body">
+                        <h5 class="card-title">Trader</h5>
+                    </div>
+
+                    <div asp-validation-summary="All"></div>
+                    @Html.HiddenFor(m => m.LoginModel.UserName)
+                    @Html.HiddenFor(m => m.LoginModel.Password)
+                    @Html.HiddenFor(m => m.LoginModel.ReturnUrl)
+                    <input hidden class="form-control" type="text" value="Trader" asp-for="RoleValue"/>
+
+                    <div class="card-block text-center">
+                        <button type="submit" class="btn btn-success btn-lg float-md-none" id="btnRole">Choose</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card rounded shadow shadow-sm">
+                <form asp-action="Index" asp-controller="Role" method="post">
+                    <img class="card-img-top" src="/Content/Images/finder.png" />
+
+                    <div class="card-body">
+                        <h5 class="card-title">Finder</h5>
+                    </div>
+                    <div asp-validation-summary="All"></div>
+                    @Html.HiddenFor(m => m.LoginModel.UserName)
+                    @Html.HiddenFor(m => m.LoginModel.Password)
+                    @Html.HiddenFor(m => m.LoginModel.ReturnUrl)
+                    <input hidden class="form-control" type="text" value="Finder" asp-for="RoleValue"/>
+
+                    <div class="card-block text-center">
+                        <button type="submit" class="btn btn-success btn-lg float-md-none" id="btnRole">Choose</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

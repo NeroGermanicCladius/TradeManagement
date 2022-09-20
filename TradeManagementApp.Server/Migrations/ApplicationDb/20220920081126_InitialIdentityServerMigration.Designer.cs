@@ -9,7 +9,7 @@ using TradeManagementApp.Server.Data;
 namespace TradeManagementApp.Server.Migrations.ApplicationDb
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220920073348_InitialIdentityServerMigration")]
+    [Migration("20220920081126_InitialIdentityServerMigration")]
     partial class InitialIdentityServerMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

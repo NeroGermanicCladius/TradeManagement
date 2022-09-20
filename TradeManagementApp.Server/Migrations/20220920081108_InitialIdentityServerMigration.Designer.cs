@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TradeManagementApp.Server.Migrations
 {
     [DbContext(typeof(PersistedGrantDbContext))]
-    [Migration("20220920073334_InitialIdentityServerMigration")]
+    [Migration("20220920081108_InitialIdentityServerMigration")]
     partial class InitialIdentityServerMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

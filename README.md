@@ -5,12 +5,27 @@ POC trade management web-application.
 * .NET Core 3.1
 * EF Core
 * Blazor
+* SQLLite
 
 # Installation
 * Clone this project to your local machine.
 
 Then: 
 * Open `http://localhost:5001` in your browser and have fun.
+
+# Database Update
+Migration
+
+* add-migration InitialIdentityServerMigration -c PersistedGrantDbContext
+* add-migration InitialIdentityServerMigration -c ConfigurationDbContext
+* add-migration InitialIdentityServerMigration -c ApplicationDbContext
+
+Update
+
+* Update-Database -c PersistedGrantDbContext
+* Update-Database -c ConfigurationDbContext
+* Update-Database -c ApplicationDbContext
+  
 
 # About the Project
 We have two component UI and Server.

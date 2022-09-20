@@ -13,10 +13,9 @@ POC trade management web-application.
 Then: 
 * Open `http://localhost:5001` in your browser and have fun.
 
-* Users
+# Users
 
-You can use 'bob' or 'alice' as username
-Password is 'Pass1234$'
+You can use 'bob' or 'alice' as username. Password is 'Pass123$'
 
 # Database Update
 Migration

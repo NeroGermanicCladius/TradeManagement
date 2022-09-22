@@ -11,11 +11,11 @@ POC trade management web-application.
 * Clone this project to your local machine.
 
 Then: 
-* Open `http://localhost:5001` in your browser and have fun.
+* Open `https://localhost:5001` in your browser and have fun.
 
 # Users
 
-You can use 'bob' or 'alice' as username. Password is 'Pass123$'
+You can use 'bob' or 'alice' as username. Password is 'Pass123$'. By using 'alice' you can choose role. 
 
 # Database Update
 Migration
